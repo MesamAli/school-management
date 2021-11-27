@@ -1,0 +1,146 @@
+* { box-sizing: border-box; }
+html, body { height: 100%; margin: 0; }
+
+body {
+	color: #585858;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #eaeaea;
+	font-family: 'Open Sans', sans-serif;
+}
+#wrapper {
+	width: 85%;
+	height: 70%;
+	display: grid;
+	grid-template-columns: 3.7fr 1.3fr;
+	grid-column-gap: 40px;
+}
+#mainContent, #sidebar {
+	padding: 30px;
+	border-radius: 5px;
+	background-color: #ffffff;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+#header {
+	display: grid;
+	grid-template-columns: 4.8fr 0.2fr 1fr;
+}
+#header > h1 {
+	display: inline;
+	font-size: 40px;
+}
+#title {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+#title > h5 {
+	margin: 0;
+	padding: 0;
+	text-align: right;
+	font-weight: bold;
+}
+#cmplt {
+	color: #2ECC71;
+}
+#uncmplt {
+	color: #FF6C5C;
+}
+#status {
+	display: flex;
+	/*flex-direction: column;*/
+	justify-content: center;
+	align-items: center;
+}
+#complete, #uncomplete {
+	color: #ffffff;
+	font-size: 30px;
+	font-weight: bold;
+	width: 50px;
+	height: 50px;
+	margin: 0 10px;
+	border-radius: 5px;
+	display: inline-grid;
+	place-items: center;
+	background-color: gray;
+}
+#complete {
+	background-color: #2ECC71;
+}
+#uncomplete {
+	background-color: #FF6C5C;
+}
+
+#subjects1 {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-gap: 15px;
+}
+#subjects2 {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-gap: 15px;
+	margin-top: 15px;
+}
+.boxs {
+	width: 100%;
+	height: 185px;
+	padding: 5px 20px;
+	/*margin-top: 20px;*/
+	border-radius: 5px;
+	background-color: #e2e2e2;
+}
+.sub {
+	color: #2e66cc;
+	margin-bottom: 30px;
+}
+.totalAssign {
+	margin: 5px 0;
+}
+.assgnNum {
+	color: #ffffff;
+	width: 5px;
+	height: 5px;
+	padding: 0 10px;
+	border-radius: 2px;
+	margin-left: 5px;	
+	background-color: #2eccc2;
+}
+.assgnNum2 {
+	background-color: #2e70cc;
+}
+#sidebar {
+	padding: 0;
+}
+#sidebar > h1 {
+	text-align: center;
+	text-transform: uppercase;
+}
+.list {
+	width: 100%;
+	padding: 8px 20px;
+}
+
+.list > h3 {
+	padding: 0;
+	margin: 0;
+}
+.list > h4 {
+	padding: 0;
+	margin: 5px 0 20px 0;
+}
+.list > h5 {
+	float: right;
+    width: 55px;
+    text-align: right;
+    padding: 3px 5px;
+    margin: 0 0 3px 0;
+    color: #ffffff;
+    background-color: #6f2ecc;
+    border-radius: 2px;
+}
+.borderBottom {
+	margin: 0 auto;
+	border-bottom: 2px solid #cecece;
+}
